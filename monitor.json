@@ -1,47 +1,47 @@
 [
   {
-    "name": "MonitorLimit",
-    "upThreshold": true,
-    "priceThreshold": 358.5
+    "name": "MonitorLimit",  // 监控规则的类型，这里是监控自定义价格阈值
+    "upThreshold": true,     // 是否为上限阈值，true 表示上限，false 表示下限
+    "priceThreshold": 810  // 设定的价格阈值，当金价突破此值时触发预警
   },
   {
-    "name": "MonitorLimit",
-    "upThreshold": false,
-    "priceThreshold": 355.0
+    "name": "MonitorLimit",  // 监控规则的类型，这里是监控自定义价格阈值
+    "upThreshold": false,    // 是否为上限阈值，true 表示上限，false 表示下限
+    "priceThreshold": 763  // 设定的价格阈值，当金价突破此值时触发预警
   },
   {
-    "name": "MonitorHistory",
-    "upThreshold": true,
-    "monitorIntervalMinutes": 120
+    "name": "MonitorHistory", // 监控规则的类型，这里是监控周期内价格阈值
+    "upThreshold": true,      // 是否为最高值监控，true 表示监控最高值，false 表示监控最低值
+    "monitorIntervalMinutes": 120 // 监控的时间周期（分钟），当金价在最近的 120 分钟内达到最高值时触发预警
   },
   {
-    "name": "MonitorHistory",
-    "upThreshold": false,
-    "monitorIntervalMinutes": 130
+    "name": "MonitorHistory", // 监控规则的类型，这里是监控周期内价格阈值
+    "upThreshold": false,     // 是否为最高值监控，true 表示监控最高值，false 表示监控最低值
+    "monitorIntervalMinutes": 130 // 监控的时间周期（分钟），当金价在最近的 130 分钟内达到最低值时触发预警
   },
   {
-    "name": "MonitorShake",
-    "priceShakeThreshold": 0.5,
-    "monitorIntervalSecond": 60
+    "name": "MonitorShake",  // 监控规则的类型，这里是监控价格震动
+    "priceShakeThreshold": 0.5, // 价格震动的阈值，当在监控周期内价格变化超过此值时触发预警
+    "monitorIntervalSecond": 60 // 监控的时间周期（秒），即在此时间内监测价格变化
   },
   {
-    "name": "MonitorShake",
-    "priceShakeThreshold": 0.8,
-    "monitorIntervalSecond": 120
+    "name": "MonitorShake",  // 监控规则的类型，这里是监控价格震动
+    "priceShakeThreshold": 0.8, // 价格震动的阈值，当在监控周期内价格变化超过此值时触发预警
+    "monitorIntervalSecond": 120 // 监控的时间周期（秒），即在此时间内监测价格变化
   },
   {
-    "name": "MonitorShake",
-    "priceShakeThreshold": 1.2,
-    "monitorIntervalSecond": 180
+    "name": "MonitorShake",  // 监控规则的类型，这里是监控价格震动
+    "priceShakeThreshold": 1.2, // 价格震动的阈值，当在监控周期内价格变化超过此值时触发预警
+    "monitorIntervalSecond": 180 // 监控的时间周期（秒），即在此时间内监测价格变化
   },
   {
-    "name": "MonitorShake",
-    "priceShakeThreshold": 1.9,
-    "monitorIntervalSecond": 240
+    "name": "MonitorShake",  // 监控规则的类型，这里是监控价格震动
+    "priceShakeThreshold": 1.9, // 价格震动的阈值，当在监控周期内价格变化超过此值时触发预警
+    "monitorIntervalSecond": 240 // 监控的时间周期（秒），即在此时间内监测价格变化
   },
   {
-    "name": "MonitorShake",
-    "priceShakeThreshold": 1.7,
-    "monitorIntervalSecond": 1200
+    "name": "MonitorShake",  // 监控规则的类型，这里是监控价格震动
+    "priceShakeThreshold": 1.7, // 价格震动的阈值，当在监控周期内价格变化超过此值时触发预警
+    "monitorIntervalSecond": 1200 // 监控的时间周期（秒），即在此时间内监测价格变化
   }
 ]

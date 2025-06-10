@@ -10,7 +10,7 @@ import com.alibaba.fastjson.JSONObject;
  */
 public class MonitorLimit implements IGoldMonitor
 {
-    private static final String contentFormat = "金价自定义%s限预警！设定值:%.2f，当前：%.2f";
+    private static final String contentFormat = "%s限，目标%.2f当前%.2f";
     private final boolean upThreshold;
     private final float priceThreshold;
 
